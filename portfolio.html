@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161212488-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,6 +14,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -21,74 +22,93 @@
   </head>
 <body>
 
-  <a class = "skip" href="#skip">Skip to Main Content</a>
+  <a class = "skip" href="#skip" tabindex="1">Skip to Main Content</a>
 
 
     <header class="header">
 <nav>
 
-      <a href="index.html" class="logo">JC</a>
+      <a href="index.html" class="logo" tabindex="2">JC</a>
      <input type="checkbox" class="menu-btn" id="menu-btn" >
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <!-- <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
 
         <ul class="menu">
-        <li >  <a href="index.html">Home</a> </li>
-        <li >  <a href="portfolio.html"><u>Portfolio</u></a> </li>
-        <li >  <a href="color.html">Colors</a> </li>
-        <li >  <a href="contact.html">Contact</a> </li>
+        <li >  <a href="index.html" class="current" tabindex="3">Home</a> </li>
+        <li >  <a href="portfolio.html" tabindex="4">Portfolio</a> </li>
+        <li >  <a href="color.html" tabindex="5">Colors</a> </li>
+        <li >  <a href="contact.html" tabindex="6">Contact</a> </li>
 
         </ul>
         </nav>
     </header>
 
 <main id="skip">
-  <h1>Works</h1>
 
-  <div class="portfolio">
-    <figure class="port1">
-      <a href="https://drive.google.com/file/d/1r2nHugHl_rhd-65LuIzlvfmL8F0lPd8f/view?usp=sharing">
-      <img src="images/ui.png" class="portfolio__img" alt="p1"></a>
-    </figure>
-    <figure class="port2">
-      <a href="https://drive.google.com/file/d/1bZjKlovoH433S6veGndzkGfGic72tnWY/view?usp=sharing">
-      <img src="images/ar.png" class="portfolio__img" alt="ar"></a>
-    </figure>
-    <figure class="port3">
-      <a href="https://drive.google.com/file/d/1ajtwS8kdQhqvUIzNSbEWGa40CTz53NNp/view?usp=sharing">
-      <img src="images/red.png" class="portfolio__img" alt="mario"></a>
-    </figure>
-    <figure class="port4">
-      <a href="https://drive.google.com/file/d/1gzfxSO-NgNpO3VDbVLdzMEcRo13DXWF2/view?usp=sharing">
-      <img src="images/rest.png" class="portfolio__img" alt="rest"></a>
-    </figure>
-    <figure class="port5">
-      <a href="https://drive.google.com/file/d/1hyBYP_CxIX7rLZuRCcSZUHfe6N7YOqsN/view?usp=sharing">
-      <img src="images/book.png" class="portfolio__img" alt="p2"></a>
-    </figure>
-    <figure class="port6">
-      <a href="https://drive.google.com/file/d/1fw5hHeIHcyDn3585q6Y8dhSs5cWcyuEz/view?usp=sharing">
-      <img src="images/map.png" class="portfolio__img" alt="vir"></a>
-    </figure>
+
+    <h1>Keyboard Accessible Flip Card</h1>
+<div class="flip">
+    <div class="flip-card" >
+    <div class="flip-card-inner" tabindex="12">
+      <div class="flip-card-front">
+        <img id="image1" src="images/flipcard.png" alt="mask" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h2>Wear Mask</h2>
+    </div>
+      </div>
+    </div>
+
+
+  <div class="flip-card">
+  <div class="flip-card-inner" tabindex="13">
+    <div class="flip-card-front" >
+      <img id="image2" src="images/washhands.png" alt="wash" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Wash Hands</h2>
+  </div>
+    </div>
+  </div>
+
+
+  <div class="flip-card">
+  <div class="flip-card-inner" tabindex="14">
+    <div class="flip-card-front" >
+      <img id="image3" src="images/travel.png" alt="travel" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>No Travel</h2>
+  </div>
+    </div>
   </div>
 
 
 
+</div>
+
+
+      <h2 id = "gallery">9 image gallery</h2>
 
 
 
+        <div class="gallery">
 
+          <img id="image4" src="images/1.png" alt="" />
+          <img id="image5" src="images/2.png" alt="" />
+          <img id="image6" src="images/3.png" alt="" />
+          <img id="image7" src="images/4.png" alt="" />
+          <img id="image8" src="images/5.png" alt="" />
+          <img id="image9" src="images/6.png" alt="" />
+          <img id="image10" src="images/7.png" alt="" />
+          <img id="image11" src="images/8.png" alt="" />
+          <img id="image12" src="images/9.png" alt="" />
 
-
-
-
-
+        </div>
       </main>
 
     <footer>
       <p>
   &copy; Jingyue Cheng</p>
     </footer>
-
-
   </body>
 </html>
