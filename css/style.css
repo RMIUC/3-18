@@ -7,7 +7,8 @@ body {
   background color: white;
   font-size: 1.125rem;
   line-height: 1.5;
-  color: #787878;
+/*   color: #787878; */
+  color:black;
   background: white;
   text-rendering: optimizeLegibility;
 }
